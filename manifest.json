@@ -1,0 +1,37 @@
+{
+   "action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html",
+      "default_title": "Auto Refresher"
+   },
+   "author": "Estate Bytes",
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "ExtPay.js" ],
+      "matches": [ "https://cgifederal.secure.force.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Searches a slot for you! Make your life easy!!!",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhUd45YSo2ocwFEupNg9mIl5kh5FEb0WzGB1m4o4IDlgr2LO2Ze5B4NiBM5QFZ91Rx0R73VCc4PhYegRu0LYgn5U5U2u8g78jtDvKdndDkQGa0s5i2gKMJyazyZESkCG0sBJIUhHeIc5js+A8PG44AC13GyRZVq/T36uuUrkw0fa7vjN+ju1WHr4M9maJaYYpYQp/F4MbPm4vlV3/clLJoVjKP78KZWLmpXYbpy5nuu/LFasX6j/aSdxLt0V+TnbPKQUWVTx3KSD+XXWeMfmonsLwWPUoEk6ayJ/mG73Td+38TjUElQ7G5GffQLRKOykArXLzsygLfgAwvxX+b2H0UQIDAQAB",
+   "manifest_version": 3,
+   "name": "US Visa Slot Finder",
+   "options_page": "options.html",
+    "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+	"https://cgifederal.secure.force.com/*",
+   "<all_urls>",
+   "tabs",
+   "http://*/*",
+   "https://*/*"
+  ],
+  "host_permissions": [
+   "https://cgifederal.secure.force.com/*"
+],
+   "short_name": "US Visa Slot Finder",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

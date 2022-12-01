@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>US Visa Slot FInder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #usflagImage {
+            width: 100px;
+            margin: 5px;
+        }
+
+        button {
+            margin: 5px;
+            outline: none;
+        }
+
+        button:hover {
+            outline: #80DEEA dotted thick;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+      
+        <div id="trailuseroptions">
+        
+            <button id="sampleMinute" value="5">Start</button>
+            <button id="stopbutton" >Stop</button>
+            <button id="refresh" >Reload/Refresh</button>
+        </div>
+<div>
+
+    <select id="consulate">	
+            <option value="" selected="selected">Change Default</option>
+            <option value="0">CHENNAI</option>
+            <option value="1">HYDERABAD</option>
+            <option value="2">KOLKATA</option>
+            <option value="3">MUMBAI</option>
+            <option value="4">NEW DELHI</option>
+        </select>
+</div>
+<div>
+    Form:
+    <input type="date" id="startDate">
+    To:
+    <input type="date" id="endDate">
+</div>
+<div>
+    Enter Time For frequency<input value="5" type="number" name="intervel_time" id="intervel_time"/>
+</div>
+       
+    </header>
+    <script src="ExtPay.js"></script>
+    <script src="popup.js"></script>
+    <script src="foreground.js"></script>
+</body>
+
+</html>
